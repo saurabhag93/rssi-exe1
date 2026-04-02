@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1lmL2QUAWg0XD5_r4WSFz_WgSQQMvmeoW
 """
 
-!pip install customtkinter
+#!pip install customtkinter
 import sys
 import os
 import joblib
@@ -25,9 +25,9 @@ def resource_path(rel_path):
     return os.path.join(base_path, rel_path)
 
 # ----------------- Load model -----------------
-MODEL_PATH = "base_lgb.pkl"
-#MODEL_FILENAME = "base_lgb.pkl"
-#MODEL_PATH = resource_path(MODEL_FILENAME)
+#MODEL_PATH = "base_lgb.pkl"
+MODEL_FILENAME = "base_lgb.pkl"
+MODEL_PATH = resource_path(MODEL_FILENAME)
 
 try:
     model = joblib.load(MODEL_PATH)
